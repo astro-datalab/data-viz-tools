@@ -1,7 +1,14 @@
 # data-viz-tools
+
+*Version: 2021-06-07*
+
 Feature evaluation of data visualization tools
 
-Suggested evaluation: + means yes, - means no, empty means not evaluated/checked/determined yet
+To contribute, please make a branch (e.g. named after your GitHub persona), committing to it, and issue PRs against `main` branch.
+
+Please add tools (columns), and features (rows) as needed.
+
+Suggested evaluation: `+` means yes, `-` means no, `n/a` means does not apply, empty means not evaluated/checked/determined yet.
 
 | ↓ Feature / Viz Tool →                                                      | Aladin Lite   | WWT / pywwt | Firefly | Glue | ESASky | Vaex | js9 | TOPCAT | yt | add others... |
 | --------------------------------------------------------------------------- | ------------- | ----------- | ------- | ---- | ------ | ---- | --- | ------ | -- | ------------- |
