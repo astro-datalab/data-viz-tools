@@ -14,7 +14,7 @@ Suggested evaluation: `+` means yes, `-` means no, `n/a` means does not apply, e
 | --------------------------------------------------------------------------- | ------------- | ----------- | ------- | ---- | ------ | ---- | --- | ------ | -- | ------------- |
 | **Interfaces**                                                              |               |             |         |      |        |      |     |        |    |               |
 | Runs in browser                                                             |               |             |+        |      |        |      |     |        |    |               |
-| Runs in notebook                                                            |               |             |+        |      |        |      |     |        |    |               |
+| Runs in notebook (e.g., via JupyterLab extension)                           |               |             |+        |      |        |      |     |        |    |               |
 | Exposes API                                                                 |               |             |+        |      |        |      |     |        |    |               |
 | Scriptable (e.g. functions/buttons/menus)                                   |               |             |+        |      |        |      |     |        |    |               |
 | **Image formats**                                                           |               |             |         |      |        |      |     |        |    |               |
@@ -22,6 +22,9 @@ Suggested evaluation: `+` means yes, `-` means no, `n/a` means does not apply, e
 | FITS files                                                                  |               |             |+        |      |        |      |     |        |    |               |
 | PNG/JPG images                                                              |               |             |+        |      |        |      |     |        |    |               |
 | **Image layer features**                                                    |               |             |         |      |        |      |     |        |    |               |
+| Change quantitative stretch                                                 |               |             |+        |      |        |      |     |        |    |               |
+| Change color mapping                                                        |               |             |+        |      |        |      |     |        |    |               |
+| Construct three-color displays from combinations of images                  |               |             |+        |      |        |      |     |        |    |               |
 | Image layers with controllable opacity                                      |               |             |-        |      |        |      |     |        |    |               |
 | Number of supported layers                                                  |               |             |         |      |        |      |     |        |    |               |
 | **Zooming and panning**                                                     |               |             |         |      |        |      |     |        |    |               |
@@ -30,15 +33,17 @@ Suggested evaluation: `+` means yes, `-` means no, `n/a` means does not apply, e
 | Zoom in/out with mouse wheel                                                |               |             |+        |      |        |      |     |        |    |               |
 | Zoom in/out with keyboard                                                   |               |             |-        |      |        |      |     |        |    |               |
 | Seamless transition from HiPS to FITS when zooming                          |               |             |+        |      |        |      |     |        |    |               |
-| Pan with mouse                                                              |               |             |-        |      |        |      |     |        |    |               |
+| Pan with mouse-drag                                                         |               |             |+        |      |        |      |     |        |    |               |
 | Pan with keyboard arrows                                                    |               |             |-        |      |        |      |     |        |    |               |
 | **Overlays**                                                                |               |             |         |      |        |      |     |        |    |               |
 | Select a pre-defined catalog to overlay                                     |               |             |+        |      |        |      |     |        |    |               |
+| Perform a search via IVOA interfaces to obtain a catalog                    |               |             |+        |      |        |      |     |        |    |               |
 | Upload custom catalog to overlay                                            |               |             |+        |      |        |      |     |        |    |               |
 | Number of shown markers is progressive with zoom level                      |               |             |-        |      |        |      |     |        |    |               |
 | Performance with very large number of markers                               |               |             |+        |      |        |      |     |        |    |               |
 | Can a limit on number of displayed markers be configured?                   |               |             |-        |      |        |      |     |        |    |               |
 | How many catalogs simultaneously?                                           |               |             |limited to browser memory         |      |        |      |     |        |    |               |
+| Overlays on images connected to other visualizations (brushing/linking)     |               |             |+        |      |        |      |     |        |    |               |
 | Displays outlines of surveys / MOCs                                         |               |             |+        |      |        |      |     |        |    |               |
 | Displays outlines of instrument footprints / FOVs                           |               |             |+        |      |        |      |     |        |    |               |
 | **Mousable features (possibly web-only)**                                   |               |             |         |      |        |      |     |        |    |               |
@@ -48,7 +53,9 @@ Suggested evaluation: `+` means yes, `-` means no, `n/a` means does not apply, e
 | Click & drag to select sources (e.g. rectangle or circle)                   |               |             |+        |      |        |      |     |        |    |               |
 | Selecting sources displays a table of these sources                         |               |             |+        |      |        |      |     |        |    |               |
 | Currently displayed table of selected sources can be saved/exported         |               |             |+        |      |        |      |     |        |    |               |
-| Rows in shown table are clickable (e.g. to pull more info from catalog)     |               |             |-        |      |        |      |     |        |    |               |
+| Rows in shown table are clickable (e.g. to pull more info from catalog)     |               |             |+ (DataLink) |      |        |      |     |        |    |               |
+| Selections retrievable via API, e.g., in Python                             |               |             |+        |      |        |      |     |        |    |               |
+| Can trigger callbacks in API via UI gestures (clicks, keystrokes)           |               |             |+        |      |        |      |     |        |    |               |
 | **Other features**                                                          |               |             |         |      |        |      |     |        |    |               |
 | Choose coordinate system (RA+Dec, glat+glon, ...)                           |               |             |+        |      |        |      |     |        |    |               |
 | Show coordinate grid                                                        |               |             |+        |      |        |      |     |        |    |               |
@@ -57,7 +64,8 @@ Suggested evaluation: `+` means yes, `-` means no, `n/a` means does not apply, e
 | Fullscreen mode (web)                                                       |               |             |+        |      |        |      |     |        |    |               |
 | Go-to-position box                                                          |               |             |+        |      |        |      |     |        |    |               |
 | Name resolution in go-to box                                                |               |             |+        |      |        |      |     |        |    |               |
-| Image blinking (e.g. between to layers/images), with key strokes            |               |             |-        |      |        |      |     |        |    |               |
+| Image blinking (e.g., between two layers/images), with key strokes          |               |             |-        |      |        |      |     |        |    |               |
+| Image blinking (e.g., between two layers/images), with mouse gestures       |               |             |+ (& auto) |      |        |      |     |        |    |               |
 | Behavior around poles (pans / doesn't pan past poles)                       |               |             |+        |      |        |      |     |        |    |               |
 | **Add others...**                                                           |               |             |         |      |        |      |     |        |    |               |
 |                                                                             |               |             |         |      |        |      |     |        |    |               |
