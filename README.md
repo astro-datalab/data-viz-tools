@@ -15,7 +15,7 @@ Suggested evaluation: `+` means yes, `-` means no, `n/a` means does not apply, e
 | **Interfaces**                                                              |               |             |         |      |        |      |     |        |    |               |
 | Runs in browser                                                             |               |             |+        |      |        |      |     |        |    |               |
 | Runs in notebook (e.g., via JupyterLab extension)                           |               |             |+        |      |        |      |     |        |    |               |
-| Exposes API                                                                 |               |             |+        |      |        |      |     |        |    |               |
+| Exposes API                                                                 |               |             |+ (Python and HTTPS) |      |        |      |     |        |    |               |
 | Scriptable (e.g. functions/buttons/menus)                                   |               |             |+        |      |        |      |     |        |    |               |
 | **Image formats**                                                           |               |             |         |      |        |      |     |        |    |               |
 | HiPS maps                                                                   |               |             |+        |      |        |      |     |        |    |               |
