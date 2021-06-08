@@ -15,6 +15,7 @@ Suggested evaluation: `+` means yes, `-` means no, `n/a` means does not apply, e
 | **Interfaces**                                                              |               |             |         |      |        |      |     |        |    |               |
 | Runs in browser                                                             |               |             |+        |      |        |      |     |        |    |               |
 | Runs in notebook (e.g., via JupyterLab extension)                           |               |             |+        |      |        |      |     |        |    |               |
+| Runs as desktop application                                                 |               |             |-        |      |        |      |     |        |    |               |
 | Exposes API                                                                 |               |             |+ (Python, JS, HTTPS) |      |        |      |     |        |    |               |
 | Scriptable (e.g. functions/buttons/menus)                                   |               |             |+        |      |        |      |     |        |    |               |
 | **Image formats**                                                           |               |             |         |      |        |      |     |        |    |               |
