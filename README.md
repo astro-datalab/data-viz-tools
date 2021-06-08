@@ -21,7 +21,7 @@ Suggested evaluation: `+` means yes, `-` means no, `n/a` means does not apply, e
 | HiPS maps                                                                   |               |             |+        |      |        |      |     |        |    |               |
 | FITS files                                                                  |               |             |+        |      |        |      |     |        |    |               |
 | PNG/JPG images                                                              |               |             |+        |      |        |      |     |        |    |               |
-| ADSF images                                                                 |               |             |-        |      |        |      |     |        |    |               |
+| ASDF images                                                                 |               |             |-        |      |        |      |     |        |    |               |
 | **Image layer features**                                                    |               |             |         |      |        |      |     |        |    |               |
 | Measure distances and angles                                                |               |             |+        |      |        |      |     |        |    |               |
 | Change quantitative stretch                                                 |               |             |+        |      |        |      |     |        |    |               |
